@@ -12,7 +12,8 @@
   height: 300px;
   border-radius: 50%;
   --value: 5;
-  background: conic-gradient(red calc(1% * var(--value)), yellow 0);
+  --reika: 30;
+  background: conic-gradient(black 0 calc(1% * var(--value)), red 0);
   overflow: hidden;
 }
 
@@ -20,12 +21,16 @@
   position: absolute;
   display: block;
   content: "";
-  padding: 30%;
+  padding: calc(var(--reika) * 1%);
   border-radius: 50%;
   background: white;
   left: 50%;
   top: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+}
+
+input {
+  width: 500px;
 }
 /*# sourceMappingURL=tyyli.css.map */
