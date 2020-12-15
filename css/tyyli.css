@@ -1,0 +1,31 @@
+.piirakkaContainer {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.piirakkaContainer .pie {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  --value: 5;
+  background: conic-gradient(red calc(1% * var(--value)), yellow 0);
+  overflow: hidden;
+}
+
+.piirakkaContainer .pie::after {
+  position: absolute;
+  display: block;
+  content: "";
+  padding: 30%;
+  border-radius: 50%;
+  background: white;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+/*# sourceMappingURL=tyyli.css.map */
