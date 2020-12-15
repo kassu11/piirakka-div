@@ -2,7 +2,7 @@
   display: grid;
   align-items: center;
 
-  .pie, .pie2 {
+  .pie {
     position: relative;
     width: 300px;
     height: 300px;
@@ -23,13 +23,6 @@
       top: 50%;
       transform: translate(-50%, -50%);
     }
-  }
-
-  .pie2 {
-    position: absolute;
-    transition: .2s;
-    animation-name: testi;
-    animation-duration: 1s;
   }
 }
 
