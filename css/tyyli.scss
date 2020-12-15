@@ -2,14 +2,14 @@
   display: grid;
   align-items: center;
 
-  .pie {
+  .pie, .pie2 {
     position: relative;
     width: 300px;
     height: 300px;
     border-radius: 50%;
-    --value: 5;
+    --value: 5%;
     --reika: 30;
-    background: conic-gradient(black 0 calc(1% * var(--value)), red 0);
+    background: conic-gradient(black 0 var(--value), #5eaaff 0);
     overflow: hidden;
 
     &::after {
@@ -23,6 +23,13 @@
       top: 50%;
       transform: translate(-50%, -50%);
     }
+  }
+
+  .pie2 {
+    position: absolute;
+    transition: .2s;
+    animation-name: testi;
+    animation-duration: 1s;
   }
 }
 
