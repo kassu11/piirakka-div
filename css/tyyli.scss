@@ -26,6 +26,23 @@
   }
 }
 
+#hpContainer {
+  position: absolute;
+  top: 8px;
+  width: 300px;
+  height: 300px;
+  display: grid;
+  align-items: center;
+
+  p {
+    font-family: helvetica;
+    font-size: 20px;
+    font-weight: 900;
+    text-shadow: 0 0 6px white;
+    text-align: center;
+  }
+}
+
 input {
   width: 500px;
 }
